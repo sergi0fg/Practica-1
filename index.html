@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/animaciones.js"></script>
+    <title>Whahts App web</title>
+</head>
+<body>
+    <div class="container">
+        <!---Ponemos la lista de contactos y la foto de perfil-->
+        <div class="leftSide">
+            <!--Aqui meteremos la imagen de perfil y tocaremos un poco el html para poner la barra gris simulado la parte de contacto de whatsapp-->
+            <div class="header">
+                <div class="userimag">
+                    <img src="imagenes/user1.jpg" class="cover">
+                </div>
+                <h2>JAVIER</h2>
+            </div>
+            <div id="container-chats">
+                <div id="primer_user" class="user">
+                    <button class="btn_contacto"><h3>Contacto 1</h3></button>
+                </div>
+                
+                <div>
+                    <button id="anadir_user" onclick="anadir_user()"><b>AÑADIR USUARIO</b></button>
+                </div>
+            </div>
+        </div>
+        <!-- Aqui ira el nombre del contacto con los mensajes y el chat-->
+        <div class="rightSide">
+            <!--Aqui va el nombre del contacto-->
+            <div class="cabecera">
+                <h1 id="titulo">SERGIO</h1>
+            </div>
+            <!--Aqui iran los mensajes-->
+            <div id="mensajes" class="mensajes">
+                    
+                   
+            </div>
+            <!--Aqui ira el chat, es decir el cuadro de texto que te permite enviar un mensaje y el boton de enviar-->
+            <div >
+                <div class="input">
+                    
+                <input id="chat" type="text">
+                <button id="btn" onclick="mandar_mensaje()">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
